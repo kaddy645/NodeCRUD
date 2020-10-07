@@ -1,0 +1,47 @@
+<html>
+
+<head>
+  <title> ToDo App </title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+  <link rel="stylesheet" href="/static/stylesheets/style.css" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" </head>
+
+  <body>
+    <div class="header" id="myHeader">
+      <h2> A Simple ToDo List App </h2>
+    </div>
+    <div class="todo-container">
+
+      <form action="/addtask" method="POST">
+        <input type="text" name="newtask" placeholder="Enter todo">
+        <button>
+          <i class="fas fa-plus-circle"></i>
+        </button>
+      </form>
+      <ul class="todo-list">
+        <% toDoTask.forEach(function(todo){ %>
+          <li></li>
+          <li class="todo-list-item">
+            <div class="todo-list-item-name">
+              <%= todo.task %>
+            </div>
+
+            <a href="/edit/<%= todo._id %>" class="edit">
+              <span class="fas fa-edit"></span>
+            </a>
+
+            <a href="/remove/<%= todo._id %>" class="remove">
+              <span class="fas fa-times"></span>
+            </a>
+          </li>
+          <% }) %>
+
+      </ul>
+
+      <a href="/deleteAll" class="delete">
+        Delete All todos
+      </a>
+    </div>
+  </body>
+
+</html>
