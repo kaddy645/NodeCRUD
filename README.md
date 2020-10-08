@@ -14,7 +14,7 @@ git clone
 npm install 
 ```
 
-Run it
+Run Server
 ```
 nodemon server.js
 ```

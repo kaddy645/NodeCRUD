@@ -1,11 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
-const MongoClient = require('mongodb').MongoClient
 const mongoose = require('mongoose');
-const PORT = 3000;
-const connectionString = "mongodb+srv://yayati:Pumpkin@64@cluster0.qtrns.mongodb.net/Todo?retryWrites=true&w=majority";
-var router = express.Router();
+const connectionString = "Enter Your Connection String Here Mongodb-Atlas";
+
 /*
 Express.js, or simply Express, is a web application framework for Node.js,
 released as free and open-source software under the MIT License.
@@ -166,7 +164,7 @@ app.route('/deleteAll').get((req, res) => {
 });
 app.listen(process.env.PORT || 3000);
 
-// add router in the Express app.
+
 
 
 
