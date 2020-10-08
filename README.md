@@ -25,6 +25,10 @@ Run Server
 nodemon server.js
 ```
 
+#### Demo
+![Image is not loading](https://github.com/kaddy645/NodeCRUD/blob/master/landing.png)
+![Image is not loading](https://github.com/kaddy645/NodeCRUD/blob/master/edit.png)
+
 Tech
 
 ## Built with
