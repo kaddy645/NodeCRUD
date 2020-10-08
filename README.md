@@ -14,6 +14,12 @@ git clone
 npm install 
 ```
 
+#### Create Mongodb Atlas Account 
+```
+https://docs.atlas.mongodb.com/getting-started/
+
+```
+
 Run Server
 ```
 nodemon server.js
